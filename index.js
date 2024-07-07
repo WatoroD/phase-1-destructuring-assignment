@@ -28,21 +28,49 @@ const nestedMuppet = {
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+const animalSounds = 'woof spueak meow moo cluck';
+const [woof, squeak, meow, moo, cluck] = animalSounds.split(' ');
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
+const animalNames = 'bessie fido fluffy whiskers';
+const [bessie, fido, fluffy, whiskers] = animalNames.split(' ');
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
+const animalColors = 'blackAndWhite brown gray';
+const [blackAndWhite, brown, gray] = animalColors.split(' ');
 
 // Arrays
 
 // 4. Use destructuring to assign appropriate variables using the color names.
+const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = rainbowColors;
 
 // 5. Some people have a really hard time picking out indigo, so let's leave that one out, using the first letter of each color as the variable names.
+const rainbowColorInitials = ['r', 'o', 'y', 'g', 'b', 'i'];
+const [r, o, y, g, b, i] = rainbowColorInitials;
 
 // 6. But wait! Indigo is now feeling *super* left out. Let's only assign indigo using indg. 
+const rainbowColorInitials = ['r', 'o', 'y', 'g', 'b', 'indg'];
+const [, , , , , indg] = rainbowColorInitials;
+const [, , , , , indg] = indigoInitials;
 
 // Objects
 
 // 7. Use destructuring to assign all variables using the keys as the variable names
+const muppet = {
+  muppetName: 'Kermit',
+  job: 'leader',
+  partner: 'Miss Piggy'
+};
+const { muppetName, job, partner } = muppet;
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+const muppet = {
+  song1: 'Rainbow Connection',
+  song2: 'The Muppet Show Theme',
+  song3: 'Mah Na Mah Na',
+  song4: 'It's Not Easy Being Green',
+  job: 'leader',
+  partner: 'Miss Piggy'
+};
+const { song2, song4, job, partner } = muppet;
